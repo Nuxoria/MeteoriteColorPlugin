@@ -1,0 +1,8 @@
+name: MeteoriteColorPlugin
+version: '${project.version}'
+main: me.dev.nux.meteoritecolorplugin.MeteoriteColorPlugin
+api-version: 1.20
+authors: [ MeteoritePVP:Nuxoria ]
+description: Color plugin
+depend:
+  - MeteoriteAPI
