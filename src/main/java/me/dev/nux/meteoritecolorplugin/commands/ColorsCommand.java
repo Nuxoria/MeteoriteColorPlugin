@@ -53,7 +53,8 @@ public class ColorsCommand implements CommandClass {
 
     @Command(
             name = "colors",
-            description = "Displays all the existing colors in a GUI"
+            description = "Displays all the existing colors in a GUI",
+            aliases = "cs"
     )
     public void showGUI(Player player) {
 
