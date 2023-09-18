@@ -4,6 +4,7 @@ import com.meteoritepvp.api.MeteoritePlugin;
 import me.dev.nux.meteoritecolorplugin.color.Color;
 import me.dev.nux.meteoritecolorplugin.color.ColorManager;
 import me.dev.nux.meteoritecolorplugin.commands.ColorCommand;
+import me.dev.nux.meteoritecolorplugin.commands.ColorsCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 import sun.net.www.MeteredStream;
 
@@ -21,8 +22,10 @@ public final class MeteoriteColorPlugin extends MeteoritePlugin {
         colorManager = new ColorManager();
 
         ColorCommand colorCommand = new ColorCommand();
+        ColorsCommand colorsCommand = new ColorsCommand(this);
 
         registerCommandObject(colorCommand);
+        registerCommandObject(colorsCommand);
 
     }
 
